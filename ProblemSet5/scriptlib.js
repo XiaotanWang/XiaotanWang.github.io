@@ -24,7 +24,7 @@ $(document).ready(function(){
                         
        data: {
            columns: [
-               ['Rank', dataSet[0], dataSet[1] ]
+               ['Rank', dataSet]
              ],
                //['sample2', 130, 300, 200, 500, 250, 350]
 
