@@ -20,6 +20,7 @@ $(document).ready(function(){
                   }); // end .each
 
                 var chart = c3.generate({
+                        bindto: '#chart4',
        data: {
            columns: [
                ['Rank', dataSet[0], dataSet[1] ]
