@@ -8,6 +8,7 @@ $(document).ready(function(){
         //"https://api.airtable.com/v0/appM38HXlEVhxmnqx/Tasks?api_key=keyTcsTzckqyBTlk8&sortField=_createdTime&sortDirection=desc";
         var dataSet = [];
         $("button#get_data2").click(function(){
+                dataSet=[];
           airtable_read_endpoint = "https://api.airtable.com/v0/appGtLX4GzOC4bWpd/Place?api_key=key0BvxEDq9DYkV7a";
           $.getJSON(airtable_read_endpoint, function(result) {
                  $.each(result.records, function(key,value) {
