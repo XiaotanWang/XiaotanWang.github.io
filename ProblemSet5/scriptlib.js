@@ -8,6 +8,7 @@ $(document).ready(function(){
         //"https://api.airtable.com/v0/appM38HXlEVhxmnqx/Tasks?api_key=keyTcsTzckqyBTlk8&sortField=_createdTime&sortDirection=desc";
         var dataSet = [];
         $("button#get_data2").click(function(){
+          dataSet=[];
           airtable_read_endpoint = "https://api.airtable.com/v0/appGtLX4GzOC4bWpd/Place?api_key=key0BvxEDq9DYkV7a";
           $.getJSON(airtable_read_endpoint, function(result) {
                  $.each(result.records, function(key,value) {
@@ -19,26 +20,18 @@ $(document).ready(function(){
                          dataSet.push(items);
                   }); // end .each
 
-                var chart = c3.generate({
-                        bindto: '#chart4',
-       data: {
-           columns: [
-               ['Rank', dataSet[0], dataSet[1] ]
-             ],
-               //['sample2', 130, 300, 200, 500, 250, 350]
-
-       },
-       axis: {
-           x: {
-               label: 'X Label'
-           },
-           y: {
-               label: 'Y Label'
-           }
-       }
-   });
-          }); // end .getJSON
-        });//end get_data2
+                  var chart = c3.generate({
+        data: {
+            columns: [
+              ['Lulu', 50,4,3,2],
+              ['Olaf', 50,6,8,1]
+            ],
+            type : 'bar'
+        },
+        bar: {
+            title: "Dogs love:",
+        }
+     });
 
         $("button#get_data1").click(function(){
           dataSet=[];
