@@ -23,9 +23,8 @@ $(document).ready(function(){
                 var chart = c3.generate({
                         
        data: {
-           columns: {
+           columns: 
                ['Rank', dataSet]
-           },
                //['sample2', 130, 300, 200, 500, 250, 350]
 
        },
