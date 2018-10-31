@@ -66,4 +66,5 @@ $(document).ready(function(){
                });
           });
       });//end get_data1
-}); // document ready
+}); // button ready
+});//document ready
