@@ -40,19 +40,7 @@
     </div>
     <div id="map" style="width: 600px; height: 400px"></div>
     <script>
-      var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
-      var map = L.map('map')
-         .addLayer(mapboxTiles)
-         .setView([22.287111, 114.191667], 13);
-
-      function show_districts(){
-        for (var i in data) {
-        var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
-        L.marker( latlng )
-          .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + data[i].url+'" width = "80px"><br>'+data[i].name + '</a>' )
-          .addTo(map);
-        }
-      }
+ 
       </script>
 </div>
 <script src='scriptlib.js'></script>

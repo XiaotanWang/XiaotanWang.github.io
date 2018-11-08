@@ -48,7 +48,18 @@ $(document).ready(function(){
                    mapitems["longitud"] = value.fields.Lng;
                    data.push(mapitems);
                    console.log(mapitems);
+
+                   }
                 }); // end .each
 }); //end getjson
+var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
+var map = L.map('map')
+   .addLayer(mapboxTiles)
+   .setView([22.287111, 114.191667], 13);
+  for (var i in data) {
+  var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+  L.marker( latlng )
+    .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + data[i].url+'" width = "80px"><br>'+data[i].name + '</a>' )
+    .addTo(map);
 });//button ready
 });//document ready
