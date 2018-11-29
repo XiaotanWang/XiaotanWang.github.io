@@ -308,7 +308,7 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
 
 @media (min-width: 992px) {
   .projects-section .featured-text {
-    padding-top: 8rem;
+    padding-top: 9rem;
     padding-bottom: 14rem;
     margin-top: -0.4rem;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/4.jpg");
@@ -317,7 +317,7 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
 }
 @media (min-width: 992px) {
   .projects-section .featured-text-2 {
-    padding-top: 8.5rem;
+    padding-top: 9rem;
     padding-bottom: 14rem;
     margin-top: -0.4rem;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/1-13.jpg");
@@ -326,10 +326,10 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
 }
 @media (min-width: 992px) {
   .projects-section .featured-text-3 {
-    padding-top: 8.5rem;
+    padding-top: 9rem;
     padding-bottom: 14rem;
     margin-top: -0.4rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/3.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/1-14.jpg");
     background-size: cover;
   }
 }
