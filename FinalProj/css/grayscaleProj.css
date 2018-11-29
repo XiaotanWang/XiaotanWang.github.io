@@ -86,21 +86,21 @@
   }
 }
 
-.masthead {
+.masthead0 {
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/2.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/2.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/1-1.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/1-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
-.masthead h1 {
+.masthead0 h1 {
   font-family: 'Varela Round';
   font-size: 2.5rem;
   line-height: 2.5rem;
@@ -110,7 +110,83 @@
   -webkit-background-clip: text;
 }
 
-.masthead h2 {
+.masthead0 h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 13rem;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.0625em;
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: 'Nunito';
+}
+
+.masthead1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/1-3.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/1-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead1 h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(100, 161, 157, 1), rgba(100, 161, 157, 0.75));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead1 h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 13rem;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 0.0625em;
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: 'Nunito';
+}
+
+.masthead2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/1-2.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/1-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead2 h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(100, 161, 157, 1), rgba(100, 161, 157, 0.75));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead2 h2 {
   max-width: 20rem;
   font-size: 1rem;
   padding-left: 1rem;
@@ -244,7 +320,7 @@ transition: color .15s ease-in-out,background-color .15s ease-in-out,border-colo
     padding-top: 8.5rem;
     padding-bottom: 14rem;
     margin-top: -0.4rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/5.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/1-13.jpg");
     background-size: cover;
   }
 }
