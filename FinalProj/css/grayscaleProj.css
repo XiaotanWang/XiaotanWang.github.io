@@ -92,8 +92,8 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/2.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -105,7 +105,7 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+  background: -webkit-linear-gradient(rgba(100, 161, 157, 1), rgba(100, 161, 157, 0.75));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -137,14 +137,18 @@
     padding: 0;
   }
   .masthead h1 {
-    font-size: 6.5rem;
+    font-size: 4rem;
     line-height: 6.5rem;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.5rem;
   }
   .masthead h2 {
     max-width: 45rem;
     font-size: 1.25rem;
   }
+}
+
+.text-white-75{
+color:rgba(255,255,255,0.75);
 }
 
 .btn {
@@ -158,9 +162,30 @@
   border: 0;
 }
 
+.btn-proj {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 0.75rem 0.75rem;
+  font-family: 'Varela Round';
+  font-size: 60%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+  display: inline-block;
+  user-select: none;
+font-weight: 400;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+line-height: 1.5;
+border-radius: .25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 .btn-primary-signup {
   background-color: #64a19d;
 }
+
 .btn-primary-visitor {
   background-color: #9e9e9e;
 }
@@ -198,13 +223,37 @@
 .projects-section .featured-text {
   padding: 2rem;
 }
+.projects-section .featured-text-2 {
+  padding: 2rem;
+}
+.projects-section .featured-text-3 {
+  padding: 2rem;
+}
 
 @media (min-width: 992px) {
   .projects-section .featured-text {
-    padding-top: 11rem;
+    padding-top: 8rem;
     padding-bottom: 14rem;
     margin-top: -0.4rem;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/4.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 992px) {
+  .projects-section .featured-text-2 {
+    padding-top: 8.5rem;
+    padding-bottom: 14rem;
+    margin-top: -0.4rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/5.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 992px) {
+  .projects-section .featured-text-3 {
+    padding-top: 8.5rem;
+    padding-bottom: 14rem;
+    margin-top: -0.4rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/3.jpg");
     background-size: cover;
   }
 }
