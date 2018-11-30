@@ -52,16 +52,16 @@ $(document).ready(function(){
 //end getjson
 //});
 
-$("button#get_map1").click(function(){
+$("a#get_map1").click(function(){
     var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
     var map = L.map('map')
        .addLayer(mapboxTiles)
        .setView([31.228611, 121.474722], 5);
 
        // create custom icon
-       var Icon = L.icon({
-    iconUrl: '../img/icon.png',
-    iconSize: [38, 95], // size of the icon
+    var Icon = L.icon({
+    iconUrl: '../FinalProj/img/icon2.png',
+    //iconSize: [55, 55], // size of the icon
     popupAnchor: [0,-15]
     });
 
