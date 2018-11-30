@@ -57,9 +57,17 @@ $("button#get_map1").click(function(){
     var map = L.map('map')
        .addLayer(mapboxTiles)
        .setView([31.228611, 121.474722], 5);
+
+       // create custom icon
+       var Icon = L.icon({
+    iconUrl: '../img/icon.png',
+    iconSize: [38, 95], // size of the icon
+    popupAnchor: [0,-15]
+    });
+
   for (var i in data) {
   var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
-  L.marker( latlng )
+  L.marker( latlng,{icon: Icon} )
           .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
           .addTo(map);
   //marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
