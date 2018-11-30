@@ -12,7 +12,7 @@
       gtag('config', 'UA-129078918-1', {'optimize_id': 'GTM-PJGPQW2'});
     </script>
     <style>.async-hide { opacity: 0 !important} </style>
-    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
 })(window,document.documentElement,'async-hide','dataLayer',4000,
@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/grayscaleProj.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
   </head>
 
@@ -55,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Find Inspiring Photos</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Share Your Photos</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
@@ -66,10 +66,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="IndexSignup.html">Sign Up</a>
+              <a class="nav-link js-scroll-trigger" href="#upload">Share your Photos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Find Photos</a>
+              <a class="nav-link js-scroll-trigger" href="PhotoIndex.html">Find Photos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="PlaceIndex.html">Find Places</a>
@@ -86,12 +86,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </nav>
 
     <!-- Header -->
-    <header class="masthead0">
+    <header class="masthead2">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Find inspiring PHOTOS</h1>
+          <h1 class="mx-auto my-0 text-uppercase">Share your photos here</h1>
           <h2 class="text-white-75 mx-auto mt-2 mb-5">On the ROAD<br>Everyone CAN be a photographer.</h2>
-          <a href="IndexSignup.html" class="btn btn-primary-signup js-scroll-trigger">Sign up to share memories</a>
+          <a href="#upload" class="btn btn-primary-signup js-scroll-trigger">share your memories</a>
         </div>
       </div>
     </header>
@@ -103,19 +103,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="container">
 
         <!-- Featured Project Row -->
+        <section id="upload">
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
+          <!--div class="col-xl-8 col-lg-7"-->
             <!--img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt=""-->
-            <iframe class="airtable-embed" src="https://airtable.com/embed/shr8Zo3YOTLf83ke6?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shri3bOaHBBTMAYww?backgroundColor=cyan" frameborder="0" onmousewheel="" width="100%" height="1575" style="background: transparent; border: 1px solid #ccc;"></iframe>
           </div>
-          <div class="col-xl-4 col-lg-5">
+          <!--div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
               <h4 style="color:#fff;border-bottom-style:solid;border-bottom-color:#64a19d;border-bottom-width:0.2rem">Photos</h4>
               <p class="mb-0 text-white-75">Provide ideas for you with pictures shared by others. Learn about different photography styles.</p>
               <p></p>
-              <a href="IndexSignup.html" class="btn-proj btn-primary-signup js-scroll-trigger">Share your travel memories!</a>
+              <a href="#about" class="btn-proj btn-primary-signup js-scroll-trigger">Share your travel memories!</a>
             </div>
-          </div>
+          </div-->
         </div>
       </section>
 
