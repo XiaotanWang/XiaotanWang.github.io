@@ -44,7 +44,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Custom styles for this template -->
     <link href="css/grayscaleProj.css" rel="stylesheet">
-
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/r/bs-3.3.5/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
   </head>
 
   <body id="page-top">
@@ -107,6 +116,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- Project One Row -->
     <section id="findplace" style="padding-top:3rem">
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <button type="button" class="btn btn-warning" id="get_data1">Travel Recommendation</button>
+        <button type="button" class="btn btn-warning" id="get_map1">Show Travel Recommendation on Map</button>
+        <table id="example" class="table table-bordered"></table>
+        <div id="map" style="width: 1170px; height: 500px;">
+        </div>
         <div class="col-xl-8 col-lg-7">
           <!--img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt=""-->
           <iframe class="airtable-embed" src="https://airtable.com/embed/shrfhDwdghC4uA1rp?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
@@ -234,7 +248,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.js"></script>
-
+    <script src='js/scriptlibPlace.js'></script>
   </body>
 
 </html>
