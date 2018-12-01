@@ -6,23 +6,30 @@ $("a#getDevice").click(function() {
         //"https://api.airtable.com/v0/appGtLX4GzOC4bWpd/Food_Recommendation?api_key=key0BvxEDq9DYkV7a"//&maxRecords=3&view=Grid%20view"
         //https://api.airtable.com/v0/appGtLX4GzOC4bWpd/Photo%20Collection?api_key=key0BvxEDq9DYkV7a"
         //"https://api.airtable.com/v0/appM38HXlEVhxmnqx/Tasks?api_key=keyTcsTzckqyBTlk8&sortField=_createdTime&sortDirection=desc";
-        var dataSet = [];
+        var dataSetN = [];
+        var dataSetP = [];
+        var dataSetU = [];
         var data = [];
           $.getJSON(airtable_read_endpoint, function(result) {
                  $.each(result.records, function(key,value) {
-                     items = [];
-                         items.push(value.fields.Name)//Name);
-                         items.push(value.fields.Price)
-                         //items.push(value.fields.UsedTimes)//Completed);
+                     itemsN = [];
+                     itemsP = [];
+                     itemsU = [];
+                         itemsN.push(value.fields.Name)//Name);
+                         itemsP.push(value.fields.Price)
+                         itemsU.push(value.fields.UsedTimes)//Completed);
                          //items.push(value.fields.Rank)//Time_Estimate);
                          //items.push(value.fields.Travel_times)//converted);
-                         dataSet.push(items);
-                         console.log(items);
+                         dataSetN.push(itemsN);
+                         dataSetP.push(itemsP);
+                         dataSetU.push(itemsU);
+                         //console.log(items);
                   }); // end .each
-                  console.log(dataSet);
+                  //console.log(dataSet);
                   var chart = c3.generate({
                     data: {
-                        columns: dataSet,
+                        columns:[
+            ['x', dataSetN], dataSetP, dataSetU]
                         type : 'chart'
                     },
                     axis: {
