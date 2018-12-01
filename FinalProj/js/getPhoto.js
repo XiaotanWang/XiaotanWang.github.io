@@ -92,8 +92,8 @@ $(document).ready(function(){
     $("a#tripBtn").click(function(){
       $("#trip").toggle();
     });
-    $("a#showBtn").click(function(){
-      $("#show").toggle();
+    $("a#showsBtn").click(function(){
+      $("#shows").toggle();
     });
     $("a#nightBtn").click(function(){
       $("#night").toggle();
@@ -124,5 +124,54 @@ $(document).ready(function(){
     });
     $("a#familyBtn").click(function(){
       $("#family").toggle();
+    });
+
+    $("a#warmBtn").click(function(){
+      $("#warm").toggle();
+    });
+    $("a#creativeBtn").click(function(){
+      $("#creative").toggle();
+    });
+    $("a#freshBtn").click(function(){
+      $("#fresh").toggle();
+    });
+    $("a#seriousBtn").click(function(){
+      $("#serious").toggle();
+    });
+    $("a#brightBtn").click(function(){
+      $("#bright").toggle();
+    });
+    $("a#recordingBtn").click(function(){
+      $("#recording").toggle();
+    });
+    $("a#longExlosureBtn").click(function(){
+      $("#longExlosure").toggle();
+    });
+    $("a#vintageBtn").click(function(){
+      $("#vintage").toggle();
+    });
+    $("a#backlightingBtn").click(function(){
+      $("#backlighting").toggle();
+    });
+    $("a#symmetricalBtn").click(function(){
+      $("#symmetrical").toggle();
+    });
+    $("a#funnyBtn").click(function(){
+      $("#funny").toggle();
+    });
+    $("a#singleColorBtn").click(function(){
+      $("#singleColor").toggle();
+    });
+    $("a#closeupBtn").click(function(){
+      $("#closeup").toggle();
+    });
+    $("a#japanBtn").click(function(){
+      $("#japan").toggle();
+    });
+    $("a#summerBtn").click(function(){
+      $("#summer").toggle();
+    });
+    $("a#bwBtn").click(function(){
+      $("#bw").toggle();
     });
 });
