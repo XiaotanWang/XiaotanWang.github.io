@@ -13,7 +13,7 @@ $("a#getDevice").click(function() {
                      items = [];
                          items.push(value.fields.Name)//Name);
                          items.push(value.fields.Price)
-                         items.puch(value.fields.UsedTimes)//Completed);
+                         items.push(value.fields.UsedTimes)//Completed);
                          //items.push(value.fields.Rank)//Time_Estimate);
                          //items.push(value.fields.Travel_times)//converted);
                          dataSet.push(items);
