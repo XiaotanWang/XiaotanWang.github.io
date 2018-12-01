@@ -77,4 +77,52 @@ $(document).ready(function(){
     $("#2get14").attr ({"src" : data2[14]});$("#2name14").text(dataN2[14]);
     $("#2get15").attr ({"src" : data2[15]});$("#2name15").text(dataN2[15]);
 });
+    $("a#colleagesBtn").click(function(){
+      $("#colleages").toggle();
+    });
+    $("a#exhibitionBtn").click(function(){
+      $("#exhibition").toggle();
+    });
+    $("a#portraitBtn").click(function(){
+      $("#portrait").toggle();
+    });
+    $("a#landscapeBtn").click(function(){
+      $("#landscape").toggle();
+    });
+    $("a#tripBtn").click(function(){
+      $("#trip").toggle();
+    });
+    $("a#showBtn").click(function(){
+      $("#show").toggle();
+    });
+    $("a#nightBtn").click(function(){
+      $("#night").toggle();
+    });
+    $("a#ceremonyBtn").click(function(){
+      $("#ceremony").toggle();
+    });
+    $("a#animalsBtn").click(function(){
+      $("#animals").toggle();
+    });
+    $("a#concertBtn").click(function(){
+      $("#concert").toggle();
+    });
+    $("a#streetBtn").click(function(){
+      $("#street").toggle();
+    });
+    $("a#friendsBtn").click(function(){
+      $("#friends").toggle();
+    });
+    $("a#foodBtn").click(function(){
+      $("#food").toggle();
+    });
+    $("a#campusBtn").click(function(){
+      $("#campus").toggle();
+    });
+    $("a#architectureBtn").click(function(){
+      $("#architecture").toggle();
+    });
+    $("a#familyBtn").click(function(){
+      $("#family").toggle();
+    });
 });
