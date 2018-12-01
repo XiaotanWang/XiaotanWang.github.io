@@ -77,4 +77,4 @@ $(document).ready(function(){
     $("#2get14").attr ({"src" : data2[14]});$("#2name14").text(dataN2[14]);
     $("#2get15").attr ({"src" : data2[15]});$("#2name15").text(dataN2[15]);
 });
-)};
+});
