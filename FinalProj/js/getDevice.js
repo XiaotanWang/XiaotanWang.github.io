@@ -12,7 +12,8 @@ $("a#getDevice").click(function() {
                  $.each(result.records, function(key,value) {
                      items = [];
                          items.push(value.fields.Name)//Name);
-                         items.push(value.fields.Price)//Completed);
+                         items.push(value.fields.Price)
+                         items.puch(value.fields.UsedTimes)//Completed);
                          //items.push(value.fields.Rank)//Time_Estimate);
                          //items.push(value.fields.Travel_times)//converted);
                          dataSet.push(items);
@@ -22,15 +23,15 @@ $("a#getDevice").click(function() {
                   var chart = c3.generate({
                     data: {
                         columns: dataSet,
-                        type : 'bar'
+                        type : 'chart'
                     },
                     axis: {
                       x: {label: 'Stage'},
                       y: {label: '# of Entries'}
                     },
-                    bar: {
-                        title: "Tasks for Each Stage:",
-                    }
+                    //bar: {
+                      //  title: "Tasks for Each Stage:",
+                    //}
                 });
 
                $("#example").DataTable({
