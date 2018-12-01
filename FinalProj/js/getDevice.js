@@ -29,7 +29,8 @@ $("a#getDevice").click(function() {
                   var chart = c3.generate({
                     data: {
                         columns:[
-            ['x', dataSetN], dataSetP, dataSetU]
+            ['x', dataSetN], dataSetP, dataSetU
+          ],
                         type : 'chart'
                     },
                     axis: {
