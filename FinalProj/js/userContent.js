@@ -8,11 +8,11 @@ $(document).ready(function(){
         //"https://api.airtable.com/v0/appM38HXlEVhxmnqx/Tasks?api_key=keyTcsTzckqyBTlk8&sortField=_createdTime&sortDirection=desc";
         var dataSet = [];
         var data = [];
-        var user = 0;
+        //var user = 0;
 
 
 
-                $("button#get_data1").click(function(){
+                //$("button#get_data1").click(function(){
                   $.getJSON(airtable_read_endpoint, function(result) {
                          $.each(result.records, function(key,value) {
                              items = {};
@@ -31,44 +31,17 @@ $(document).ready(function(){
                           //console.log(picitems);
                           //console.log(items);
                         });// end .each
+                        $("a#get_data1").click(function(){
+                          $("#image").show();
+                        for (var i = 0; i < dataSet.length; i++) {
+                         if ($("#form7").val() == dataSet[i].name) {
+                           $("#2get0").attr ({"src" : dataSet[i].url});
+                           $("#name0").text(dataSet[i].name);
 
-                      });
-
-                  $("button#get_data2").click(function(){
-                  for (var i = 0; i < dataSet.length; i++) {
-                   if ($("#form7").val() == dataSet[i].name) {
-                     $("#2get0").attr ({"src" : dataSet[i].url});
-                      break;
-                    }
-
-                    //user = dataSet[i];
-                 }
-                 });
-
-
-                $("button#get_data3").click(function(){
-                  $.getJSON(airtable_read_endpoint, function(result) {
-                         $.each(result.records, function(key,value) {
-                             picitems = [];
-                                 picitems.push(value.fields.url)//Name);
-                                 //items.push(value.fields.Notes)//Completed);
-                                 //items.push(value.fields.Rank)//Time_Estimate);
-                                 //items.push(value.fields.Travel_times)//converted);
-                                 data.push(picitems);
-                          });
-                        });
-                      });
-                        $("button#get_data4").click(function(){
-                          for (var j = 0; j < data.length; j++) {
-                            if (data[j] == user) {
-
-                              break;
-                            }
-                            $("#2get0").attr ({"src" : data[j]});
+                            break;
                           }
-                        });
 
+                          //user = dataSet[i];
+                       }
+                      });
       });// button ready
-      //$("button#get_map1").click(function(){
-//end getjson
-//});
