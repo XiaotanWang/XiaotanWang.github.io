@@ -23,7 +23,7 @@ $(document).ready(function(){
                                  dataSet.push(items);
                           });
                         });// end .each
-                      )};
+                      });
                   $("button#get_data2").click(function(){
                   for (var i = 0; i < dataSet.length; i++) {
                     if ($("#form7").text()==dataSet[i]) {
