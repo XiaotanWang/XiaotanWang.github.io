@@ -21,7 +21,7 @@ $(document).ready(function(){
                 }); // end .each
     });
 
-        $("button#get_data1").click(function(){
+        $("a#get_char1").click(function(){
           //dataSet=[];
           $.getJSON(airtable_read_endpoint, function(result) {
                  $.each(result.records, function(key,value) {
