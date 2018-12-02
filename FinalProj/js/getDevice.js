@@ -17,25 +17,28 @@ $("a#getDevice").click(function() {
                      itemsU = [];
                          itemsP.push(value.fields.Name)//Name);
                          itemsP.push(value.fields.Price)
-                         //itemsU.push(value.fields.UsedTimes)//Completed);
+                         itemsU.push(value.fields.Name)
+                         itemsU.push(value.fields.UsedTimes)//Completed);
                          //items.push(value.fields.Rank)//Time_Estimate);
                          //items.push(value.fields.Travel_times)//converted);
                          //dataSetN.push(itemsN);
                          dataSetP.push(itemsP);
-                         //dataSetU.push(itemsU);
+                         dataSetU.push(itemsU);
                          console.log(itemsP);
+                         console.log(itemsU);
                   }); // end .each
                   console.log(dataSetP);
+                  console.log(dataSetU);
                 var chart = c3.generate({
                      data: {
-                         columns: dataSetP,
-                         type : 'chart'
+                         columns: [dataSetP,dataSetU],
+                         type : 'bar'
                      },
                      axis: {
                        x: {label: 'Stage'},
                        y: {label: '# of Entries'}
                      },
-                     chart: {
+                     bar: {
                          title: "Tasks for Each Stage:",
                      }
                  });
