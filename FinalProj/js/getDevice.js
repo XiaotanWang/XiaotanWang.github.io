@@ -23,9 +23,9 @@ $("a#getDevice").click(function() {
                          dataSetN.push(itemsN);
                          dataSetP.push(itemsP);
                          dataSetU.push(itemsU);
-                         console.log(dataSetP);
+                         console.log(itemsP);
                   }); // end .each
-                  //console.log(dataSet);
+                  console.log(dataSetP);
                   var chart = c3.generate({
                     data: {
                         columns: dataSetP,
