@@ -33,9 +33,12 @@ $("a#getDevice").click(function() {
                   console.log(dataSetN)
                 var chart = c3.generate({
                      data: {
+                        x:'x',
                          columns: [
                            ['x', dataSetN],
-                           dataSetP,dataSetU],
+                           dataSetP,
+                           dataSetU,
+                         ],
                          names: {
                            dataSetP:'Price',
                            dataSetU:'Used Times'
