@@ -37,7 +37,7 @@ $("a#getDevice").click(function() {
                          type : 'bar'
                      },
                      axis: {
-                       x: {label: 'Stage'},
+                       x: {label: 'Devices'},
                        y: {label: '# of Entries'}
                      },
                      bar: {
