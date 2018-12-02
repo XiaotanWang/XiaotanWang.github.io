@@ -36,22 +36,22 @@ $("a#getDevice").click(function() {
                         x:'x',
                          columns: [
                            ['x', dataSetN],
-                           dataSetP,
-                           dataSetU,
+                           ['Price',dataSetP],
+                           ['Used Times',dataSetU],
                          ],
-                         names: {
-                           dataSetP:'Price',
-                           dataSetU:'Used Times'
-                         },
+                         //names: {
+                           //dataSetP:'Price',
+                           //dataSetU:'Used Times'
+                         //},
                          type : 'bar'
                      },
                      axis: {
                        x: {label: 'Devices'},
                        y: {label: '# of Entries'}
                      },
-                     bar: {
-                         title: "Tasks for Each Stage:",
-                     }
+                     //bar: {
+                        // title: "Tasks for Each Stage:",
+                  //   }
                  });
                });
              });
