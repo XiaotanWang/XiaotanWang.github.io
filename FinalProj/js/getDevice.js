@@ -29,15 +29,15 @@ $("a#getDevice").click(function() {
                   var chart = c3.generate({
                     data: {
                         columns: dataSetP,
-                        type : 'bar'
+                        types : 'bar'
                     },
                     axis: {
                       x: {label: 'Stage'},
                       y: {label: '# of Entries'}
                     },
-                    //bar: {
-                      //  title: "Tasks for Each Stage:",
-                    //}
+                    bar: {
+                        title: "Tasks for Each Stage:",
+                    }
                 });
 
                $("#example").DataTable({
