@@ -15,29 +15,32 @@ $(document).ready(function(){
                 $("button#get_data1").click(function(){
                   $.getJSON(airtable_read_endpoint, function(result) {
                          $.each(result.records, function(key,value) {
-                             items = [];
-                             picitems = [];
-                                 picitems.push(value.fields.url)//Name);
-                                 items.push(value.fields.Name)//Completed);
+                             items = {};
+                             //picitems = [];
+                                items["name"] = value.fields.Name
+                                items["url"] = value.fields.url//Name);
+                                 //Completed);
                                  //items.push(value.fields.Rank)//Time_Estimate);
                                  //items.push(value.fields.Travel_times)//converted);
-                                 data.push(picitems);
+                                 //data.push(picitems);
                                  dataSet.push(items);
-                                 console.log(data);
-                                 console.log(dataSet);
+                                 //console.log(data);
+                                 //console.log(dataSet);
+                                 console.log(items);
                           });
-                          console.log(picitems);
-                          console.log(items);
+                          //console.log(picitems);
+                          //console.log(items);
                         });// end .each
 
                       });
 
                   $("button#get_data2").click(function(){
                   for (var i = 0; i < dataSet.length; i++) {
-                   if ($("#form7").val() == dataSet[i]) {
+                   if ($("#form7").val() == dataSet[i].name) {
+                     $("#2get0").attr ({"src" : dataSet[i].url});
                       break;
                     }
-                    $("#2get0").attr ({"src" : data[i]});
+
                     //user = dataSet[i];
                  }
                  });
