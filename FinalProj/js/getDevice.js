@@ -29,7 +29,7 @@ $("a#getDevice").click(function() {
                   var chart = c3.generate({
                     data: {
                         columns: dataSetP,
-                        type : 'chart'
+                        types : 'chart'
                     },
                     axis: {
                       x: {label: 'Stage'},
