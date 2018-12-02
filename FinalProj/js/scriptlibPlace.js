@@ -27,25 +27,25 @@ $(document).ready(function(){
                  $.each(result.records, function(key,value) {
                      items = [];
                          items.push(value.fields.Name)//Name);
-                         items.push(value.fields.Notes)//Completed);
-                         items.push(value.fields.Rank)//Time_Estimate);
+                         //items.push(value.fields.Notes)//Completed);
+                         //items.push(value.fields.Rank)//Time_Estimate);
                          items.push(value.fields.Travel_times)//converted);
                          dataSet.push(items);
+                         console.log(dataSet);
                   }); // end .each
-               $("#example").DataTable({
-                   data: dataSet,
-                   retrieve: true,
-                   columns: [
-                       { title: "Place",
-                         defaultContent:""},
-                       { title: "Notes",
-                         defaultContent:"" },
-                       { title: "Recommendation Rank",
-                         defaultContent:""},
-                       { title: "Mentioned Times",
-                         defaultContent:""},
-                   ]
-               });
+                  var chart = c3.generate({
+                    data: {
+                        columns: dataSet,
+                        types : 'chart'
+                    },
+                    axis: {
+                      x: {label: 'Stage'},
+                      y: {label: '# of Entries'}
+                    },
+                    //bar: {
+                      //  title: "Tasks for Each Stage:",
+                    //}
+                });
           });
       });// button ready
       //$("button#get_map1").click(function(){
