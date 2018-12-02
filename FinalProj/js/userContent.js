@@ -16,19 +16,22 @@ $(document).ready(function(){
                   $.getJSON(airtable_read_endpoint, function(result) {
                          $.each(result.records, function(key,value) {
                              items = [];
-                                 items.push(value.fields.Name)//Name);
+                                 items.push(value.fields.url)//Name);
                                  //items.push(value.fields.Notes)//Completed);
                                  //items.push(value.fields.Rank)//Time_Estimate);
                                  //items.push(value.fields.Travel_times)//converted);
                                  dataSet.push(items);
                           });
                         });// end .each
+
                       });
+
                   $("button#get_data2").click(function(){
                   for (var i = 0; i < dataSet.length; i++) {
-                    if ($("#form7").text()==dataSet[i]) {
-                      user=dataSet[i];
-                      break;
+                   if (i==2) {
+                    //  user=dataSet[i];
+                      $("#2get0").attr ({"src" : dataSet[i]});
+                    break;
                     }
                   }
                 });
@@ -46,12 +49,12 @@ $(document).ready(function(){
                         });
                       });
                         $("button#get_data4").click(function(){
-                        //  for (var j = 0; j < data.length; j++) {
-                          //  if (data[j]==user) {
+                          for (var j = 0; j < data.length; j++) {
+                            if (data[j]==user) {
                               $("#2get0").attr ({"src" : data[1]});
-                              //break;
-                            //}
-                        //  }
+                              break;
+                            }
+                          }
                         });
 
       });// button ready
