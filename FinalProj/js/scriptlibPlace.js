@@ -16,6 +16,7 @@ $(document).ready(function(){
                    mapitems["url"] = value.fields.recurl;
                    mapitems["latitud"] = value.fields.Lat;
                    mapitems["longitud"] = value.fields.Lng;
+                   mapitems["id"] = value.fields.id;
                    data.push(mapitems);
                    console.log(mapitems);
                 }); // end .each
