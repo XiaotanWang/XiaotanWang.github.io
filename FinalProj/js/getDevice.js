@@ -15,20 +15,22 @@ $("a#getDevice").click(function() {
                      itemsN = [];
                      itemsP = [];
                      itemsU = [];
-                         itemsP.push(value.fields.Name)//Name);
+                         itemsN.push(value.fields.Name)//Name);
                          itemsP.push(value.fields.Price)
-                         itemsU.push(value.fields.Name)
+                         //itemsU.push(value.fields.Name)
                          itemsU.push(value.fields.UsedTimes)//Completed);
                          //items.push(value.fields.Rank)//Time_Estimate);
                          //items.push(value.fields.Travel_times)//converted);
-                         //dataSetN.push(itemsN);
+                         dataSetN.push(itemsN);
                          dataSetP.push(itemsP);
                          dataSetU.push(itemsU);
                          console.log(itemsP);
                          console.log(itemsU);
+                         console.log(itemsN)
                   }); // end .each
                   console.log(dataSetP);
                   console.log(dataSetU);
+                  console.log(dataSetN)
                 var chart = c3.generate({
                      data: {
                          columns: [dataSetP,dataSetU],
