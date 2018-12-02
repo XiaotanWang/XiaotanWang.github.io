@@ -15,7 +15,7 @@ $("a#getDevice").click(function() {
                      itemsN = [];
                      itemsP = [];
                      itemsU = [];
-                         itemsN.push(value.fields.Name)//Name);
+                         itemsP.push(value.fields.Name)//Name);
                          itemsP.push(value.fields.Price)
                          itemsU.push(value.fields.UsedTimes)//Completed);
                          //items.push(value.fields.Rank)//Time_Estimate);
@@ -28,9 +28,7 @@ $("a#getDevice").click(function() {
                   //console.log(dataSet);
                   var chart = c3.generate({
                     data: {
-                        columns:[
-            ['x', dataSetN], dataSetP, dataSetU
-          ],
+                        columns: dataSetP,
                         type : 'chart'
                     },
                     axis: {
