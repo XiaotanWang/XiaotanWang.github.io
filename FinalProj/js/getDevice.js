@@ -35,9 +35,9 @@ $("a#getDevice").click(function() {
                        x: {label: 'Stage'},
                        y: {label: '# of Entries'}
                      },
-                     //bar: {
-                        // title: "Tasks for Each Stage:",
-                     //}
+                     chart: {
+                         title: "Tasks for Each Stage:",
+                     }
                  });
                });
              });
