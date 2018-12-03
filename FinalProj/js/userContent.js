@@ -2,7 +2,7 @@ $(document).ready(function(){
 //$("button#get_data2").click(function() {
         var items = [];
         var mapitems = [];
-        var airtable_read_endpoint = "https://api.airtable.com/v0/appGtLX4GzOC4bWpd/Place?api_key=key0BvxEDq9DYkV7a";
+        var airtable_read_endpoint = "https://api.airtable.com/v0/appGtLX4GzOC4bWpd/UserContents?api_key=key0BvxEDq9DYkV7a";
         //"https://api.airtable.com/v0/appGtLX4GzOC4bWpd/Food_Recommendation?api_key=key0BvxEDq9DYkV7a"//&maxRecords=3&view=Grid%20view"
         //https://api.airtable.com/v0/appGtLX4GzOC4bWpd/Photo%20Collection?api_key=key0BvxEDq9DYkV7a"
         //"https://api.airtable.com/v0/appM38HXlEVhxmnqx/Tasks?api_key=keyTcsTzckqyBTlk8&sortField=_createdTime&sortDirection=desc";
@@ -19,6 +19,7 @@ $(document).ready(function(){
                              //picitems = [];
                                 items["name"] = value.fields.Name
                                 items["url"] = value.fields.url//Name);
+                                items["description"] = value.fields.Description
                                  //Completed);
                                  //items.push(value.fields.Rank)//Time_Estimate);
                                  //items.push(value.fields.Travel_times)//converted);
@@ -37,7 +38,7 @@ $(document).ready(function(){
                          if ($("#form7").val() == dataSet[i].name) {
                            $("#2get0").attr ({"src" : dataSet[i].url});
                            $("#name0").text(dataSet[i].name);
-
+                           $("#description").text(dataSet[i].description);
                             break;
                           }
 
