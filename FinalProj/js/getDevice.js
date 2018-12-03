@@ -34,13 +34,13 @@ $("a#getDevice").click(function() {
                 var chart = c3.generate({
                      data: {
                         //x:'x',
-                         columns: dataSetN
+                         columns: dataSetN,
 
                           // ['x', dataSetN],
                            //['Price',dataSetP],
                           // ['Used Times',dataSetU],
 
-                         ,
+
                          //names: {
                            //dataSetP:'Price',
                            //dataSetU:'Used Times'
