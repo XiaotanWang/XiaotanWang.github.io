@@ -26,10 +26,10 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <meta name="author" content="">
 
     <title>On the ROAD</title>
-    <!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.9/c3.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.9/c3.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.9/c3.css" rel="stylesheet" type="text/css"-->
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -96,6 +96,8 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
           <section id="finddevice" style="padding-top:3rem">
             <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+
+              <!--canvas id="myChart" width="400" height="400"></canvas-->
               <div class="col-xl-8 col-lg-7">
            <!--img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt=""-->
                 <iframe class="airtable-embed" src="https://airtable.com/embed/shrvqOE498qlDmb1p?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
@@ -107,6 +109,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                   <p></p>
                  <a href="IndexSignup.html" class="btn-proj btn-primary-signup js-scroll-trigger">Get more recommendations!</a>
                 </div>
+               </div>
+               <div class="container">
+                 <canvas id="myChart" width="400" height="200" style="background:white;display:none;"></canvas>
                </div>
              </div>
           </section>
