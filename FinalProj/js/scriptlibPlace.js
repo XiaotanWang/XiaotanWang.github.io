@@ -54,6 +54,7 @@ $(document).ready(function(){
 //});
 
 $("a#get_map1").click(function(){
+  $("#place").toggle();
     var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
     var map = L.map('map')
        .addLayer(mapboxTiles)
@@ -69,10 +70,12 @@ $("a#get_map1").click(function(){
   for (var i in data) {
   var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
   L.marker( latlng,{icon: Icon} )
-          .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+  .bindPopup( '<a href="' + '#' + data[i].id + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+          //.bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
           .addTo(map);
   //marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 }
 });
+
 //button ready
 });//document ready

@@ -16,7 +16,7 @@ $("a#getDevice").click(function() {
                      itemsP = [];
                      itemsU = [];
                          itemsN.push(value.fields.Name)//Name);
-                         itemsP.push(value.fields.Price)
+                         itemsN.push(value.fields.Price)
                          //itemsU.push(value.fields.Name)
                          itemsU.push(value.fields.UsedTimes)//Completed);
                          //items.push(value.fields.Rank)//Time_Estimate);
@@ -33,12 +33,14 @@ $("a#getDevice").click(function() {
                   console.log(dataSetN)
                 var chart = c3.generate({
                      data: {
-                        x:'x',
-                         columns: [
-                           ['x', dataSetN],
-                           ['Price',dataSetP],
-                           ['Used Times',dataSetU],
-                         ],
+                        //x:'x',
+                         columns: dataSetN
+
+                          // ['x', dataSetN],
+                           //['Price',dataSetP],
+                          // ['Used Times',dataSetU],
+
+                         ,
                          //names: {
                            //dataSetP:'Price',
                            //dataSetU:'Used Times'
@@ -47,7 +49,7 @@ $("a#getDevice").click(function() {
                      },
                      axis: {
                        x: {label: 'Devices'},
-                       y: {label: '# of Entries'}
+                       y: {label: 'Price/$'}
                      },
                      //bar: {
                         // title: "Tasks for Each Stage:",
