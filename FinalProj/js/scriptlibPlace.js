@@ -40,8 +40,8 @@ $("a#get_map1").click(function(){
   for (var i in data) {
   var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
   L.marker( latlng,{icon: Icon} )
-  .bindPopup( '<a href="' + '#' + data[i].id + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
-          //.bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+  //.bindPopup( '<a href="' + '#' + data[i].id + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+          .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
           .addTo(map);
   //marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 }
