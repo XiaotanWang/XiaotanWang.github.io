@@ -38,6 +38,263 @@ $(document).ready(function(){
   });
 
     //for (var i = 0; i < mapitem.length; i++) {
+    $("#colleages").mouseenter(function(){
+      $("#colleages").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#colleages").mouseleave(function(){
+      $("#colleages").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#exhibition").mouseenter(function(){
+      $("#exhibition").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#exhibition").mouseleave(function(){
+      $("#exhibition").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#portrait").mouseenter(function(){
+      $("#portrait").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#portrait").mouseleave(function(){
+      $("#portrait").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#landscape").mouseenter(function(){
+      $("#landscape").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#landscape").mouseleave(function(){
+      $("#landscape").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#trip").mouseenter(function(){
+      $("#trip").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#trip").mouseleave(function(){
+      $("#trip").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#show").mouseenter(function(){
+      $("#show").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#show").mouseleave(function(){
+      $("#show").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#night").mouseenter(function(){
+      $("#night").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#night").mouseleave(function(){
+      $("#night").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#ceremony").mouseenter(function(){
+      $("#ceremony").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#ceremony").mouseleave(function(){
+      $("#ceremony").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#animals").mouseenter(function(){
+      $("#animals").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#animals").mouseleave(function(){
+      $("#animals").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#concert").mouseenter(function(){
+      $("#concert").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#concert").mouseleave(function(){
+      $("#concert").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#street").mouseenter(function(){
+      $("#street").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#street").mouseleave(function(){
+      $("#street").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#friends").mouseenter(function(){
+      $("#friends").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#friends").mouseleave(function(){
+      $("#friends").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#food").mouseenter(function(){
+      $("#food").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#food").mouseleave(function(){
+      $("#food").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#campus").mouseenter(function(){
+      $("#campus").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#campus").mouseleave(function(){
+      $("#campus").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#architecture").mouseenter(function(){
+      $("#architecture").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#architecture").mouseleave(function(){
+      $("#architecture").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#family").mouseenter(function(){
+      $("#family").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#family").mouseleave(function(){
+      $("#family").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#warm").mouseenter(function(){
+      $("#warm").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#warm").mouseleave(function(){
+      $("#warm").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#creative").mouseenter(function(){
+      $("#creative").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#creative").mouseleave(function(){
+      $("#creative").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#fresh").mouseenter(function(){
+      $("#fresh").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#fresh").mouseleave(function(){
+      $("#fresh").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#serious").mouseenter(function(){
+      $("#serious").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#serious").mouseleave(function(){
+      $("#serious").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#bright").mouseenter(function(){
+      $("#bright").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#bright").mouseleave(function(){
+      $("#bright").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#recording").mouseenter(function(){
+      $("#recording").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#recording").mouseleave(function(){
+      $("#recording").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#longExlosure").mouseenter(function(){
+      $("#longExlosure").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#longExlosure").mouseleave(function(){
+      $("#longExlosure").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#vintage").mouseenter(function(){
+      $("#vintage").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#vintage").mouseleave(function(){
+      $("#vintage").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#backlighting").mouseenter(function(){
+      $("#backlighting").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#backlighting").mouseleave(function(){
+      $("#backlighting").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#symmetrical").mouseenter(function(){
+      $("#symmetrical").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#symmetrical").mouseleave(function(){
+      $("#symmetrical").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#funny").mouseenter(function(){
+      $("#funny").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#funny").mouseleave(function(){
+      $("#funny").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("singleColor").mouseenter(function(){
+      $("singleColor").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("singleColor").mouseleave(function(){
+      $("singleColor").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#closeup").mouseenter(function(){
+      $("#closeup").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#closeup").mouseleave(function(){
+      $("#closeup").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#japan").mouseenter(function(){
+      $("#japan").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#japan").mouseleave(function(){
+      $("#japan").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#summer").mouseenter(function(){
+      $("#summer").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#summer").mouseleave(function(){
+      $("#summer").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    $("#bw").mouseenter(function(){
+      $("#bw").attr({"src":"../FinalProj/img/like.png"});
+      $(this).css("cursor","Pointer");
+    })
+    $("#bw").mouseleave(function(){
+      $("#bw").attr({"src":"../FinalProj/img/icon1.png"})
+    })
+
+    
     $("a#show").click(function(){
 
     //$("a#test1").click(function(){
@@ -77,101 +334,198 @@ $(document).ready(function(){
     $("#2get14").attr ({"src" : data2[14]});$("#2name14").text(dataN2[14]);
     $("#2get15").attr ({"src" : data2[15]});$("#2name15").text(dataN2[15]);
 });
-    $("a#colleagesBtn").click(function(){
-      $("#colleages").toggle();
+
+    $("#colleages").click(function(){
+      $("#colleages").attr({"src":"../FinalProj/img/like.png"});
+      $("#colleages").mouseleave(function(){
+        $("#colleages").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#exhibitionBtn").click(function(){
-      $("#exhibition").toggle();
+    $("#exhibition").click(function(){
+      $("#exhibition").attr({"src":"../FinalProj/img/like.png"});
+      $("#exhibition").mouseleave(function(){
+        $("#exhibition").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#portraitBtn").click(function(){
-      $("#portrait").toggle();
+    $("#portrait").click(function(){
+      $("#portrait").attr({"src":"../FinalProj/img/like.png"});
+      $("#portrait").mouseleave(function(){
+        $("#portrait").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#landscapeBtn").click(function(){
-      $("#landscape").toggle();
+    $("#landscape").click(function(){
+      $("#landscape").attr({"src":"../FinalProj/img/like.png"});
+      $("#landscape").mouseleave(function(){
+        $("#landscape").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#tripBtn").click(function(){
-      $("#trip").toggle();
+    $("#trip").click(function(){
+      $("#trip").attr({"src":"../FinalProj/img/like.png"});
+      $("#trip").mouseleave(function(){
+        $("#trip").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#showsBtn").click(function(){
-      $("#shows").toggle();
+    $("#shows").click(function(){
+      $("#shows").attr({"src":"../FinalProj/img/like.png"});
+      $("#shows").mouseleave(function(){
+        $("#shows").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#nightBtn").click(function(){
-      $("#night").toggle();
+    $("#night").click(function(){
+      $("#night").attr({"src":"../FinalProj/img/like.png"});
+      $("#night").mouseleave(function(){
+        $("#night").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
     $("a#ceremonyBtn").click(function(){
-      $("#ceremony").toggle();
+      $(".like").attr({"src":"../FinalProj/img/like.png"});
+      $(".like").mouseleave(function(){
+        $(".like").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#animalsBtn").click(function(){
-      $("#animals").toggle();
+    $("#animals").click(function(){
+      $("#animals").attr({"src":"../FinalProj/img/like.png"});
+      $("#animals").mouseleave(function(){
+        $("#animals").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#concertBtn").click(function(){
-      $("#concert").toggle();
+    $("#concert").click(function(){
+      $("#concert").attr({"src":"../FinalProj/img/like.png"});
+      $("#concert").mouseleave(function(){
+        $("#concert").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#streetBtn").click(function(){
-      $("#street").toggle();
+    $("#street").click(function(){
+      $("#street").attr({"src":"../FinalProj/img/like.png"});
+      $("#street").mouseleave(function(){
+        $("#street").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#friendsBtn").click(function(){
-      $("#friends").toggle();
+    $("#friends").click(function(){
+      $("#friends").attr({"src":"../FinalProj/img/like.png"});
+      $("#friends").mouseleave(function(){
+        $("#friends").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#foodBtn").click(function(){
-      $("#food").toggle();
+    $("#food").click(function(){
+      $("#food").attr({"src":"../FinalProj/img/like.png"});
+      $("#food").mouseleave(function(){
+        $("#food").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#campusBtn").click(function(){
-      $("#campus").toggle();
+    $("#campus").click(function(){
+      $("#campus").attr({"src":"../FinalProj/img/like.png"});
+      $("#campus").mouseleave(function(){
+        $("#campus").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#architectureBtn").click(function(){
-      $("#architecture").toggle();
+    $("#architecture").click(function(){
+      $("#architecture").attr({"src":"../FinalProj/img/like.png"});
+      $("#architecture").mouseleave(function(){
+        $("#architecture").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#familyBtn").click(function(){
-      $("#family").toggle();
+    $("#family").click(function(){
+      $("#family").attr({"src":"../FinalProj/img/like.png"});
+      $("#family").mouseleave(function(){
+        $("#family").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
 
-    $("a#warmBtn").click(function(){
-      $("#warm").toggle();
+    $("#warm").click(function(){
+      $("#warm").attr({"src":"../FinalProj/img/like.png"});
+      $("#warm").mouseleave(function(){
+        $("#warm").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#creativeBtn").click(function(){
-      $("#creative").toggle();
+    $("#creative").click(function(){
+      $("#creative").attr({"src":"../FinalProj/img/like.png"});
+      $("#creative").mouseleave(function(){
+        $("#creative").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#freshBtn").click(function(){
-      $("#fresh").toggle();
+    $("#fresh").click(function(){
+      $("#fresh").attr({"src":"../FinalProj/img/like.png"});
+      $("#fresh").mouseleave(function(){
+        $("#fresh").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#seriousBtn").click(function(){
-      $("#serious").toggle();
+    $("#serious").click(function(){
+      $("#serious").attr({"src":"../FinalProj/img/like.png"});
+      $("#serious").mouseleave(function(){
+        $("#serious").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#brightBtn").click(function(){
-      $("#bright").toggle();
+    $("#bright").click(function(){
+      $("#bright").attr({"src":"../FinalProj/img/like.png"});
+      $("#bright").mouseleave(function(){
+        $("#bright").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#recordingBtn").click(function(){
-      $("#recording").toggle();
+    $("#recording").click(function(){
+      $("#recording").attr({"src":"../FinalProj/img/like.png"});
+      $("#recording").mouseleave(function(){
+        $("#recording").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#longExlosureBtn").click(function(){
-      $("#longExlosure").toggle();
+    $("#longExlosure").click(function(){
+      $("#longExlosure").attr({"src":"../FinalProj/img/like.png"});
+      $("#longExlosure").mouseleave(function(){
+        $("#longExlosure").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#vintageBtn").click(function(){
-      $("#vintage").toggle();
+    $("#vintage").click(function(){
+      $("#vintage").attr({"src":"../FinalProj/img/like.png"});
+      $("#vintage").mouseleave(function(){
+        $("#vintage").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#backlightingBtn").click(function(){
-      $("#backlighting").toggle();
+    $("#backlighting").click(function(){
+      $("#backlighting").attr({"src":"../FinalProj/img/like.png"});
+      $("#backlighting").mouseleave(function(){
+        $("#backlighting").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#symmetricalBtn").click(function(){
-      $("#symmetrical").toggle();
+    $("#symmetrical").click(function(){
+      $("#symmetrical").attr({"src":"../FinalProj/img/like.png"});
+      $("#symmetrical").mouseleave(function(){
+        $("#symmetrical").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#funnyBtn").click(function(){
-      $("#funny").toggle();
+    $("#funny").click(function(){
+      $("#funny").attr({"src":"../FinalProj/img/like.png"});
+      $("#funny").mouseleave(function(){
+        $("#funny").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#singleColorBtn").click(function(){
-      $("#singleColor").toggle();
+    $("#singleColor").click(function(){
+      $("#singleColor").attr({"src":"../FinalProj/img/like.png"});
+      $("#singleColor").mouseleave(function(){
+        $("#singleColor").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#closeupBtn").click(function(){
-      $("#closeup").toggle();
+    $("#closeup").click(function(){
+      $("#closeup").attr({"src":"../FinalProj/img/like.png"});
+      $("#closeup").mouseleave(function(){
+        $("#closeup").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#japanBtn").click(function(){
-      $("#japan").toggle();
+    $("#japan").click(function(){
+      $("#japan").attr({"src":"../FinalProj/img/like.png"});
+      $("#japan").mouseleave(function(){
+        $("#japan").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#summerBtn").click(function(){
-      $("#summer").toggle();
+    $("#summer").click(function(){
+      $("#summer").attr({"src":"../FinalProj/img/like.png"});
+      $("#summer").mouseleave(function(){
+        $("#summer").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
-    $("a#bwBtn").click(function(){
-      $("#bw").toggle();
+    $("#bw").click(function(){
+      $("#bw").attr({"src":"../FinalProj/img/like.png"});
+      $("#bw").mouseleave(function(){
+        $("#bw").attr({"src":"../FinalProj/img/like.png"})
+      });
     });
 });
