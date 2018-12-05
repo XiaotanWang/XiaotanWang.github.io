@@ -294,7 +294,7 @@ $(document).ready(function(){
       $("#bw").attr({"src":"../FinalProj/img/icon1.png"})
     })
 
-    
+
     $("a#show").click(function(){
 
     //$("a#test1").click(function(){
@@ -365,10 +365,10 @@ $(document).ready(function(){
         $("#trip").attr({"src":"../FinalProj/img/like.png"})
       });
     });
-    $("#shows").click(function(){
-      $("#shows").attr({"src":"../FinalProj/img/like.png"});
-      $("#shows").mouseleave(function(){
-        $("#shows").attr({"src":"../FinalProj/img/like.png"})
+    $("#show").click(function(){
+      $("#show").attr({"src":"../FinalProj/img/like.png"});
+      $("#show").mouseleave(function(){
+        $("#show").attr({"src":"../FinalProj/img/like.png"})
       });
     });
     $("#night").click(function(){
@@ -377,10 +377,10 @@ $(document).ready(function(){
         $("#night").attr({"src":"../FinalProj/img/like.png"})
       });
     });
-    $("a#ceremonyBtn").click(function(){
-      $(".like").attr({"src":"../FinalProj/img/like.png"});
-      $(".like").mouseleave(function(){
-        $(".like").attr({"src":"../FinalProj/img/like.png"})
+    $("#ceremony").click(function(){
+      $("#ceremony").attr({"src":"../FinalProj/img/like.png"});
+      $("#ceremony").mouseleave(function(){
+        $("#ceremony").attr({"src":"../FinalProj/img/like.png"})
       });
     });
     $("#animals").click(function(){
