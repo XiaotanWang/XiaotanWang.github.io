@@ -39,6 +39,9 @@ $(document).ready(function(){
                            $("#2get0").attr ({"src" : dataSet[i].url});
                            $("#name0").text(dataSet[i].name);
                            $("#description").text(dataSet[i].description);
+                           $("#findphoto").attr ({"href" : "PhotoIndexSup.html"});
+                           $("#findplace").attr ({"href" : "PlaceIndexSup.html"});
+                           $("#finddevice").attr ({"href" : "DeviceIndexSup.html"});
                             break;
                           }
 
